@@ -113,5 +113,15 @@ namespace Karteczki
         {
             Application.Exit(); 
         }
+
+        private void przeczytajNaGłosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new System.Speech.Synthesis.SpeechSynthesizer().Speak(richTextBox1.Text);   
+        }
+
+        private void przeczytajNaGłosWybranyTekatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new System.Speech.Synthesis.SpeechSynthesizer().Speak(richTextBox1.SelectedText);
+        }
     }
 }

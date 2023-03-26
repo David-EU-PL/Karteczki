@@ -50,6 +50,8 @@
             this.centrumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prawejStronyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zamknijProgramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.przeczytajNaGłosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.przeczytajNaGłosWybranyTekatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,18 +72,20 @@
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nowaKartkaToolStripMenuItem,
-            this.usuńKartkęToolStripMenuItem,
             this.pokażNagłówekToolStripMenuItem,
             this.schowajNagłówekToolStripMenuItem,
+            this.usuńKartkęToolStripMenuItem,
             this.czcionkaToolStripMenuItem,
             this.kolorToolStripMenuItem,
-            this.oProgramieToolStripMenuItem,
             this.przezroczystośćToolStripMenuItem,
-            this.zawszeNaWierzchuToolStripMenuItem,
             this.przesuńTekstDoToolStripMenuItem,
+            this.przeczytajNaGłosToolStripMenuItem,
+            this.przeczytajNaGłosWybranyTekatToolStripMenuItem,
+            this.zawszeNaWierzchuToolStripMenuItem,
+            this.oProgramieToolStripMenuItem,
             this.zamknijProgramToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 268);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(245, 312);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // nowaKartkaToolStripMenuItem
@@ -210,6 +214,20 @@
             this.zamknijProgramToolStripMenuItem.Text = "Zamknij program";
             this.zamknijProgramToolStripMenuItem.Click += new System.EventHandler(this.zamknijProgramToolStripMenuItem_Click);
             // 
+            // przeczytajNaGłosToolStripMenuItem
+            // 
+            this.przeczytajNaGłosToolStripMenuItem.Name = "przeczytajNaGłosToolStripMenuItem";
+            this.przeczytajNaGłosToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.przeczytajNaGłosToolStripMenuItem.Text = "Przeczytaj na głos cały tekst";
+            this.przeczytajNaGłosToolStripMenuItem.Click += new System.EventHandler(this.przeczytajNaGłosToolStripMenuItem_Click);
+            // 
+            // przeczytajNaGłosWybranyTekatToolStripMenuItem
+            // 
+            this.przeczytajNaGłosWybranyTekatToolStripMenuItem.Name = "przeczytajNaGłosWybranyTekatToolStripMenuItem";
+            this.przeczytajNaGłosWybranyTekatToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.przeczytajNaGłosWybranyTekatToolStripMenuItem.Text = "Przeczytaj na głos wybrany tekat";
+            this.przeczytajNaGłosWybranyTekatToolStripMenuItem.Click += new System.EventHandler(this.przeczytajNaGłosWybranyTekatToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -251,6 +269,8 @@
         private System.Windows.Forms.ToolStripMenuItem centrumToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem prawejStronyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zamknijProgramToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem przeczytajNaGłosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem przeczytajNaGłosWybranyTekatToolStripMenuItem;
     }
 }
 
