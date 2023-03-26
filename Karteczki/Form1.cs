@@ -123,5 +123,22 @@ namespace Karteczki
         {
             new System.Speech.Synthesis.SpeechSynthesizer().Speak(richTextBox1.SelectedText);
         }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void otwórzPlikToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            richTextBox1.LoadFile(openFileDialog1.FileName);
+        }
+
+        private void zapiszPlikToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.ShowDialog();
+            richTextBox1.SaveFile(saveFileDialog1.FileName);
+        }
     }
 }

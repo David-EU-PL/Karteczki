@@ -52,6 +52,10 @@
             this.zamknijProgramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.przeczytajNaGłosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.przeczytajNaGłosWybranyTekatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.otwórzPlikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zapiszPlikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +76,8 @@
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nowaKartkaToolStripMenuItem,
+            this.otwórzPlikToolStripMenuItem,
+            this.zapiszPlikToolStripMenuItem,
             this.pokażNagłówekToolStripMenuItem,
             this.schowajNagłówekToolStripMenuItem,
             this.usuńKartkęToolStripMenuItem,
@@ -85,7 +91,7 @@
             this.oProgramieToolStripMenuItem,
             this.zamknijProgramToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(245, 312);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(245, 356);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // nowaKartkaToolStripMenuItem
@@ -228,6 +234,24 @@
             this.przeczytajNaGłosWybranyTekatToolStripMenuItem.Text = "Przeczytaj na głos wybrany tekat";
             this.przeczytajNaGłosWybranyTekatToolStripMenuItem.Click += new System.EventHandler(this.przeczytajNaGłosWybranyTekatToolStripMenuItem_Click);
             // 
+            // otwórzPlikToolStripMenuItem
+            // 
+            this.otwórzPlikToolStripMenuItem.Name = "otwórzPlikToolStripMenuItem";
+            this.otwórzPlikToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.otwórzPlikToolStripMenuItem.Text = "Otwórz plik";
+            this.otwórzPlikToolStripMenuItem.Click += new System.EventHandler(this.otwórzPlikToolStripMenuItem_Click);
+            // 
+            // zapiszPlikToolStripMenuItem
+            // 
+            this.zapiszPlikToolStripMenuItem.Name = "zapiszPlikToolStripMenuItem";
+            this.zapiszPlikToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.zapiszPlikToolStripMenuItem.Text = "Zapisz plik";
+            this.zapiszPlikToolStripMenuItem.Click += new System.EventHandler(this.zapiszPlikToolStripMenuItem_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,6 +295,10 @@
         private System.Windows.Forms.ToolStripMenuItem zamknijProgramToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem przeczytajNaGłosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem przeczytajNaGłosWybranyTekatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem otwórzPlikToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem zapiszPlikToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
