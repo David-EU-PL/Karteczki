@@ -140,5 +140,22 @@ namespace Karteczki
             saveFileDialog1.ShowDialog();
             richTextBox1.SaveFile(saveFileDialog1.FileName);
         }
+        int ostatniaPozycjaMyszyX;
+        int ostatniaPozycjaMyszyY;
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ostatniaPozycjaMyszyX = Cursor.Position.X;
+            ostatniaPozycjaMyszyY = Cursor.Position.Y;
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left) {
+                Left += Cursor.Position.X - ostatniaPozycjaMyszyX;
+                Top += Cursor.Position.Y - ostatniaPozycjaMyszyY;
+                ostatniaPozycjaMyszyX = Cursor.Position.X;
+                ostatniaPozycjaMyszyY = Cursor.Position.Y;
+            }
+        }
     }
 }
